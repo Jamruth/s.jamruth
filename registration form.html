@@ -1,102 +1,88 @@
  <!DOCTYPE html>
- <html>
-    <head>
-        <title>
-            Registration Form
-        </title>
-        <h2>Registration Form For Interns</h2>
-    </head>
-    <style>
-        body {
-          background-color: aqua;
-        }
-        </style>
-</head>
-        <div class="container"id="col"></div>
-        <form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">First Name:</label><br>
-    <input type="FIrst Name" class="form-control" id="exampleInputFirst Name" aria-describedby="First NameHelp">
-    <div id="First NameHelp" class="form-text"></div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputLast Name" class="form-label">Last Name:</label><br>
-    <input type="Last Name" class="form-control" id="exampleInputLast Name">
-  </div>
-  <div class="row g-3 align-items-center">
-    <div class="col-auto">
-        <label class="form-check-label" for="exampleCheck1">Email address:</label><br>
-    </div>
-    <div class="col-auto">
-        <input type="password" id="Password" class="form-control" aria-describedby="PasswordHelpInline">
-    </div>
-    <div class="col-auto">
-        <div class="col-auto"></div>
-    </div>
-  </div>
-  <div class="mb-3 form-check">
-    <label for="inputPassword6" class="col-form-label">Password:</label><br>
-    <input type="password" id="inputEmailAddress" class="form-control" aria-describedby="EmailAddressHelpInline">
-    <div class="col-auto"></div>
-    <label for="inputphone number" class="col-form-label">phone number:</label><br>
-    <input type="Phone numnber" id="inputPhone number" class="form-control" aria-describedby="phonr numberHelpInline">
-
-  </div>
-  <label for="exampleFormControlTextarea1" class="form-label">Address:</label>
-  <div class="mb-3">
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-  <div class="mb-3 form-check">
-  <label for="inputGroup1" class="col-form-label">Group:</label><br>
-  <input type="Group" id="input Group" class="form-control" aria-describedby="Group HelpInline">
-  <div class="col-auto"></div>
-</div>
-  <div class="col-md-6">
-    <label for="inputCity" class="form-label">City:</label><br>
-    <input type="text" class="form-control" id="inputCity">
-  </div>
-  <div class="col-md-4">
-    <label for="inputState" class="form-label">State:</label><br>
-    <select id="inputState" class="form-select">
-      <option selected>Choose...</option>
-      <option>AP</option>
-      <option>TS</option>
-    </select>
-  </div>
-  <div class="col-md-2">
-    <label for="inputZip" class="form-label">Adhar Number:</label><br>
-    <input type=  "text" class=  "form-control" id=  "inputAdhar Number">
-  </div>
-  <div class="col-md-2">
-    <label for="inputZip" class="form-label">Pin code:</label><br>
-    <input type="text" class="form-control" id="inputPin code ">
-  </div>
-  <div class="col-12">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Check me out
-      </label>
-    </div>
-  </div>
-</form>
-
- <button type="submit" class="btn btn-primary">Submit</button><br>
-
-    </body>
- </html>
-
- <html>
-<head> 
-<title>My Resume</title>
-</head>
-<body>
-  <div class="container" id=""output">
-  <h2><center>My Resume</h2></div>
+  <html>
+      <head>
+          <link href="css/bootstrap.min.css" rel="stylesheet">
+          <script src="js/bootstrap.min.js"></script>
+          <link href="css/basis.css" rel="stylesheet">
+          <script src="js/resume.js"></script>
+      </head>
+      <body>
+          <style>
+              body {
+                background-color: rgb(25, 235, 224);
+              }
+              </style>
+        
+          <center><h2>Registration form</h2></center>
+          <form class="row">
+              <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">firstname</label>
+                <input type="text" id="firstname" class="form-control" id="validationDefault01" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">middlename</label>
+                <input type="text" id="middlename" class="form-control" id="validationDefault02">
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">lastname</label>
+                <input type="text" id="lastname" class="form-control" id="validationDefault02" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">DateOfBirth</label>
+                <input type="text" class="form-control" id="DateOfBirth" id="validationDefault02" required>
+              </div>
+              <div class="col-md-4"><br></br>
+                <label for="validationDefault02" class="form-label">Gender</label>
+                <select class="form-select" id="validationDefault04" required>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Others</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Mobile Number</label>
+                <input type="text" class="form-control" id="validationDefault02" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault02" class="form-label">EmailId</label>
+                <input type="text" id="mail" class="form-control" id="validationDefault02" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault02" class="form-label">Password</label>
+                <input type="text" class="form-control" id="validationDefault02" required>
+              </div>
+              
+             <div class="col-md-4">
+                <label for="validationDefault03" class="form-label">State</label>
+                <input type="text" class="form-control" id="validationDefault03" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault04" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationDefault02" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault05" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="validationDefault05" required>
+              </div>
+              <div>
+                <label for="formFileLg" class="form-label">Aadhar Number</label><br></br>
+                <input class="form-control form-control-lg" id="formFileLg" type="file">
+              </div>
+              <div>
+                <label for="formFileLg" class="form-label">Pan Card</label><br></br>
+                <input class="form-control form-control-lg" id="formFileLg" type="file">
+              </div>
+              <div class="col-md-4"><br></br>
+                <button class="btn btn-primary" onclick="resume()" type="submit">Submit</button>
+              </div>
+            </form>
+            <div class="container" id="resume">
+              <img src="file:///C:/Users/user33/Desktop/abhi/dd.png" width="100px" height="100px" align="right">
+  <center><h2></h2>My Resume</h2></center></div>
 <div class="Details">
-<p>Name:Jamruth Begum</p>
-<p>Email:jammu133@gmail.com</p>
-<p>Contact Number:7234247277</p>
+<p id="name">Name</p>
+<p id="email">Email</p>
+<p id="number">Phone Number</p>
 </div>
 <hr>
 <div class="Career Objective">
